@@ -3,7 +3,7 @@ package com.service.ejemplo01;
 import java.util.List;
 import org.springframework.data.repository.Repository;
 
-public interface PersonaRepositorio extends Repository<Persona, Integer>{
+public interface PersonaRepositorio extends Repository<Persona, Long>{
     
     //para listar todas las personas
     List<Persona>findAll();
