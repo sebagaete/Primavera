@@ -11,9 +11,11 @@ import javax.persistence.*;
 
 public class Persona {
 
-    @Id @Column @GeneratedValue(strategy=GenerationType.IDENTITY) private int id;
-    @Column private String name;
-    @Column private String apellidos;
+    @Id
+    @GeneratedValue(strategy=GenerationType.IDENTITY)
+    private int id;
+    private String name;
+    private String apellidos;
 
     public int getId() {
         return id;
